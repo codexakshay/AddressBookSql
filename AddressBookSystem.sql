@@ -36,8 +36,5 @@ SELECT State,count(FirstName) FROM addressbook GROUP BY State;
 
 SELECT FirstName,City FROM addressbook GROUP BY City ORDER BY FirstName ASC;
 
-ALTER TABLE addressBook ADD Type varchar(20) after LastName;
-UPDATE addressBook SET Type = 'Family' WHERE FirstName = 'Fnameone';
-UPDATE addressBook SET Type = 'Friends' WHERE FirstName = 'Fnamethree';
 
 
